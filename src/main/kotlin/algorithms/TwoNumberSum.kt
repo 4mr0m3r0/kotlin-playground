@@ -2,7 +2,7 @@ package algorithms
 
 class TwoNumberSum {
     /**
-     * Big O Notation. Time O(N^2) | Space O(1)
+     * Big O Notation. Time O(n^2) | Space O(1)
      */
     fun twoNumberSumON2(array: ArrayList<Int>, targetSum: Int): Array<Int> {
         repeat(array.size) { i ->
@@ -18,7 +18,7 @@ class TwoNumberSum {
     }
 
     /**
-     * Big O Notation. Time O(N) | Space O(N)
+     * Big O Notation. Time O(n) | Space O(n)
      */
     fun twoNumberSumON(array: ArrayList<Int>, targetSum: Int): Array<Int> {
         val traversedNumbers = hashMapOf<Int, Int>()
@@ -35,7 +35,7 @@ class TwoNumberSum {
     }
 
     /**
-     * Big O Notation. Time O(N log N) | Space O(1)
+     * Big O Notation. Time O(n log n) | Space O(1)
      */
     fun twoNumberSumONlogN(array: ArrayList<Int>, targetSum: Int): Array<Int> {
         array.sort()
