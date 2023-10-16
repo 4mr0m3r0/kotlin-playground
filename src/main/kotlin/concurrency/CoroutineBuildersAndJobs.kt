@@ -1,8 +1,8 @@
-package coroutines
+package concurrency
 
 import kotlinx.coroutines.*
 
-class BuildersAndJobs {
+class CoroutineBuildersAndJobs {
     /**
      * runBlocking: It blocks the thread until the code inside is finished.
      */

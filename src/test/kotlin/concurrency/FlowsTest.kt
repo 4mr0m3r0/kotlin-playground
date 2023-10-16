@@ -1,4 +1,4 @@
-package flows
+package concurrency
 
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test

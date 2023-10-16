@@ -1,18 +1,18 @@
-package coroutines
+package concurrency
 
 import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class BuildersAndJobsTest {
-    private val buildersAndJobs = BuildersAndJobs()
+class CoroutineBuildersAndJobsTest {
+    private val coroutineBuildersAndJobs = CoroutineBuildersAndJobs()
 
     @Test
     fun `builder run blocking`() = runBlocking {
         var results: String
         val timeInMillis = measureTimeMillis {
-            results = buildersAndJobs.builderRunBlocking()
+            results = coroutineBuildersAndJobs.builderRunBlocking()
         }
 
         println("Time in Millis: $timeInMillis")

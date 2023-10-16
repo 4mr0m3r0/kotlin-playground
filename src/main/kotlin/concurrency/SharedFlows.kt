@@ -1,11 +1,11 @@
-package flows
+package concurrency
 
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 
-class StudySharedFlow {
+class SharedFlows {
     private val penguinGenus = listOf(
         "1 Aptenodytes",
         "2 Pygoscelis",

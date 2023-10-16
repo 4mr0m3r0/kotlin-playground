@@ -1,9 +1,9 @@
-package coroutines
+package concurrency
 
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class Scopes {
+class CoroutineScopes {
     private val coroutineScope = object : CoroutineScope {
         /**
          * When an operation inside the job fails, all the job is cancelled and all the operations inside are lost.

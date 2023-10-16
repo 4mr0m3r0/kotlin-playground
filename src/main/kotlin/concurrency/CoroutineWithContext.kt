@@ -1,9 +1,9 @@
-package coroutines
+package concurrency
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class WithContext {
+class CoroutineWithContext {
     suspend fun withContextDefault(): String = withContext(Dispatchers.Default) {
         "Used by all standard builders if no dispatcher is specified"
     }

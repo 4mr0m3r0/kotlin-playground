@@ -1,4 +1,4 @@
-package flows
+package concurrency
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -6,17 +6,17 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlin.test.Test
 
-class StudySharedFlowTest {
-    private val studySharedFlow = StudySharedFlow()
+class SharedFlowsTest {
+    private val sharedFlows = SharedFlows()
 
     @Test
     fun `given delay of 700, when emit, then losing 1st and 2nd element`() = runBlocking<Unit> {
         launch {
-            studySharedFlow.emitPenguinGenus()
+            sharedFlows.emitPenguinGenus()
         }
         delay(700)
         withTimeoutOrNull<Unit>(3000) {
-            studySharedFlow.state.collect(::println)
+            sharedFlows.state.collect(::println)
         }
     }
 
@@ -40,11 +40,11 @@ class StudySharedFlowTest {
     @Test
     fun `given delay of 700 and using replay, when emit, then NOT losing 1st and 2nd element`(): Unit = runBlocking {
         launch {
-            studySharedFlow.emitPenguinGenusReplay()
+            sharedFlows.emitPenguinGenusReplay()
         }
         delay(300)
         withTimeoutOrNull<Unit>(5000) {
-            studySharedFlow.stateReplay.collect {
+            sharedFlows.stateReplay.collect {
                 println(it)
                 delay(700)
             }
@@ -71,11 +71,11 @@ class StudySharedFlowTest {
     @Test
     fun `given delay 700-replay-extraBufferCapacity, when emit, then NOT losing 1st and 2nd element`(): Unit = runBlocking {
         launch {
-            studySharedFlow.emitPenguinGenusExtraBufferCapacity()
+            sharedFlows.emitPenguinGenusExtraBufferCapacity()
         }
         delay(300)
         withTimeoutOrNull<Unit>(5000) {
-            studySharedFlow.stateExtraBufferCapacity.collect {
+            sharedFlows.stateExtraBufferCapacity.collect {
                 println(it)
                 delay(700)
             }
@@ -100,11 +100,11 @@ class StudySharedFlowTest {
     @Test
     fun `given delay 700-replay-extraBufferCapacity-onBufferOverflow, when emit, then DROP 2nd and 3rd element`(): Unit = runBlocking {
         launch {
-            studySharedFlow.emitPenguinGenusOnBufferOverflow()
+            sharedFlows.emitPenguinGenusOnBufferOverflow()
         }
         delay(300)
         withTimeoutOrNull<Unit>(5000) {
-            studySharedFlow.stateOnBufferOverflow.collect {
+            sharedFlows.stateOnBufferOverflow.collect {
                 println(it)
                 delay(700)
             }
