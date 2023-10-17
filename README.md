@@ -7,12 +7,12 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | Basics            | Classes              | Collections     | Concurrency                 | Interfaces          |
 |-------------------|----------------------|-----------------|-----------------------------|---------------------|
 | Enums             | Abstract Class       | Lists           | Coroutine: Builder and Jobs | Interface with code | 
-| Delegate Property | Data Class           | Loop and Ranges | Coroutine: Scopes           |                     |
+| Delegate Property | Data Class           | Loop and Ranges | Coroutine: Scopes           | Sealed Interface    |
 | Lambdas           | Properties           | Maps            | Coroutine: with Context     |                     |
 | Number            | Several Constructors | Sequences       | Flows                       |                     |
 | Scope Functions   | Single Constructor   | Sets            | Shared Flow                 |                     |
 | String Template   | Open Class           |                 | Channel                     |                     |
-|                   |                      |                 | Callback Flow               |                     |
+|                   | Sealed Class         |                 | Callback Flow               |                     |
 
 ## Algorithms 
 
