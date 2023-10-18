@@ -16,14 +16,14 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Algorithms 
 
-| Arrays                 | Binary Tree |   |
-|------------------------|-------------|---|
-| NonConstructibleChange |             |   |
-| SortedSquaredArray     |             |   |
-| TournamentWinner       |             |   |
-| TransposeMatrix        |             |   |
-| TwoNumberSum           |             |   |
-| ValidateSubsequence    |             |   |
+| Arrays                 | Binary Tree | Strings         |
+|------------------------|-------------|-----------------|
+| NonConstructibleChange |             | CountingValleys |
+| SortedSquaredArray     |             |                 |
+| TournamentWinner       |             |                 |
+| TransposeMatrix        |             |                 |
+| TwoNumberSum           |             |                 |
+| ValidateSubsequence    |             |                 |
 
 ## Design Patterns
 
