@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.arrays
 
 import kotlin.math.abs
 

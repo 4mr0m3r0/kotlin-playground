@@ -1,8 +1,7 @@
-package algorithms
+package algorithms.arrays
 
 import kotlin.test.Test
 import kotlin.test.assertContentEquals
-import kotlin.test.assertEquals
 
 class TwoNumberSumTest {
     private val twoNumberSum = TwoNumberSum()
