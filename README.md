@@ -26,6 +26,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | TransposeMatrix        |             |                 |
 | TwoNumberSum           |             |                 |
 | ValidateSubsequence    |             |                 |
+| JumpingOnTheClouds     |             |                 |
 
 ## Design Patterns
 
