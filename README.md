@@ -4,15 +4,17 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Language Features
 
-| Basics            | Classes              | Collections     | Concurrency                 | Interfaces          |
-|-------------------|----------------------|-----------------|-----------------------------|---------------------|
-| Enums             | Abstract Class       | Lists           | Coroutine: Builder and Jobs | Interface with code | 
-| Delegate Property | Data Class           | Loop and Ranges | Coroutine: Scopes           | Sealed Interface    |
-| Lambdas           | Properties           | Maps            | Coroutine: with Context     |                     |
-| Number            | Several Constructors | Sequences       | Flows                       |                     |
-| Scope Functions   | Single Constructor   | Sets            | Shared Flow                 |                     |
-| String Template   | Open Class           |                 | Channel                     |                     |
-|                   | Sealed Class         |                 | Callback Flow               |                     |
+| Basics            | Classes              | Collections     | Concurrency                 | Interfaces          | Functions                    |
+|-------------------|----------------------|-----------------|-----------------------------|---------------------|------------------------------|
+| Enums             | Abstract Class       | Lists           | Coroutine: Builder and Jobs | Interface with code | Infix Function               | 
+| Delegate Property | Data Class           | Loop and Ranges | Coroutine: Scopes           | Sealed Interface    | Local Function               |
+| Lambdas           | Properties           | Maps            | Coroutine: with Context     |                     | Operator Overloading         |
+| Number            | Several Constructors | Sequences       | Flows                       |                     | Lambdas with Receivers       |
+| Scope Functions   | Single Constructor   | Sets            | Shared Flow                 |                     | Extension Function Companion |
+| String Template   | Open Class           |                 | Channel                     |                     | Extension Property           |
+|                   | Sealed Class         |                 | Callback Flow               |                     |                              |
+|                   | Visibility Modifier  |                 |                             |                     |                              |
+|                   | Type Alias           |                 |                             |                     |                              |
 
 ## Algorithms 
 
