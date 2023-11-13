@@ -1,4 +1,1 @@
-fun main(args: Array<String>) {
-//    coroutineLaunch()
-    coroutineAsync()
-}
+fun main(args: Array<String>) { }

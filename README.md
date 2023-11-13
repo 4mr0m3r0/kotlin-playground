@@ -12,21 +12,23 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | Number            | Several Constructors | Sequences       | Flows                       |                     | Lambdas with Receivers       |
 | Scope Functions   | Single Constructor   | Sets            | Shared Flow                 |                     | Extension Function Companion |
 | String Template   | Open Class           |                 | Channel                     |                     | Extension Property           |
-|                   | Sealed Class         |                 | Callback Flow               |                     |                              |
-|                   | Visibility Modifier  |                 |                             |                     |                              |
-|                   | Type Alias           |                 |                             |                     |                              |
+|                   | Sealed Class         |                 | Callback Flow               |                     | Inline, Noinline, Crossline  |
+|                   | Visibility Modifier  |                 |                             |                     | Reified                      |
+|                   | Type Alias           |                 |                             |                     | Contracts                    |
+|                   | Custom Delegate      |                 |                             |                     |                              |
+
 
 ## Algorithms 
 
-| Arrays                 | Binary Tree | Strings         |
-|------------------------|-------------|-----------------|
-| NonConstructibleChange |             | CountingValleys |
-| SortedSquaredArray     |             |                 |
-| TournamentWinner       |             |                 |
-| TransposeMatrix        |             |                 |
-| TwoNumberSum           |             |                 |
-| ValidateSubsequence    |             |                 |
-| JumpingOnTheClouds     |             |                 |
+| Arrays                 | Binary Tree           | Strings         |
+|------------------------|-----------------------|-----------------|
+| NonConstructibleChange | FindClosestValueInBST | CountingValleys |
+| SortedSquaredArray     |                       |                 |
+| TournamentWinner       |                       |                 |
+| TransposeMatrix        |                       |                 |
+| TwoNumberSum           |                       |                 |
+| ValidateSubsequence    |                       |                 |
+| JumpingOnTheClouds     |                       |                 |
 
 ## Design Patterns
 
