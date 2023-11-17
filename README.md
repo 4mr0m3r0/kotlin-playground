@@ -15,7 +15,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |                   | Sealed Class         |                 | Callback Flow               |                     | Inline, Noinline, Crossline  |
 |                   | Visibility Modifier  |                 |                             |                     | Reified                      |
 |                   | Type Alias           |                 |                             |                     | Contracts                    |
-|                   | Custom Delegate      |                 |                             |                     |                              |
+|                   | Custom Delegate      |                 |                             |                     | TailRec                      |
 
 
 ## Algorithms 
