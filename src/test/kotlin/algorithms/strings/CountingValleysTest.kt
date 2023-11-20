@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.strings
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
