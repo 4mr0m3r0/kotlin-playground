@@ -30,9 +30,3 @@ class BranchSums {
 }
 
 data class BinaryTree(val value: Int, val left: BinaryTree? = null, val right: BinaryTree? = null)
-
-//    open class BinaryTree(value: Int) {
-//        var value = value
-//        var left: BinaryTree? = null
-//        var right: BinaryTree? = null
-//    }
