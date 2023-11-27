@@ -23,8 +23,8 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | Arrays                 | Binary Tree           | Strings         |
 |------------------------|-----------------------|-----------------|
 | NonConstructibleChange | FindClosestValueInBST | CountingValleys |
-| SortedSquaredArray     | Branch Sums           | RepeatedString  |
-| TournamentWinner       |                       |                 |
+| SortedSquaredArray     | BranchSums            | RepeatedString  |
+| TournamentWinner       | NodeDepths            |                 |
 | TransposeMatrix        |                       |                 |
 | TwoNumberSum           |                       |                 |
 | ValidateSubsequence    |                       |                 |

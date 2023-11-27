@@ -27,6 +27,6 @@ class BranchSums {
         }
         return branchSums
     }
-}
 
-data class BinaryTree(val value: Int, val left: BinaryTree? = null, val right: BinaryTree? = null)
+    data class BinaryTree(val value: Int, val left: BinaryTree? = null, val right: BinaryTree? = null)
+}

@@ -1,5 +1,6 @@
 package algorithms.trees
 
+import algorithms.trees.BranchSums.BinaryTree
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
