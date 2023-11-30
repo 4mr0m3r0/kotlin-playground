@@ -25,7 +25,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | NonConstructibleChange | FindClosestValueInBST | CountingValleys |
 | SortedSquaredArray     | BranchSums            | RepeatedString  |
 | TournamentWinner       | NodeDepths            |                 |
-| TransposeMatrix        |                       |                 |
+| TransposeMatrix        | HeightOfABinaryTree   |                 |
 | TwoNumberSum           |                       |                 |
 | ValidateSubsequence    |                       |                 |
 | JumpingOnTheClouds     |                       |                 |
