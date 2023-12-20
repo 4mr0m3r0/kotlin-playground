@@ -37,4 +37,11 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |------------|------------|------------|
 |            |            |            |
 
+## SOLID
+| Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
+|-----------------------|----------------------|-----------------------|-----------------------|----------------------|
+|                       | OpenClosedInitial    | LiskovRectangle       |                       |                      |
+|                       | OpenClosedViolation  | LiskovViolationSquare |                       |                      |
+|                       | OpenClosedConformity |                       |                       |                      |
+
 

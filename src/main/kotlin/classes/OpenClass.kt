@@ -5,8 +5,12 @@ package classes
  * Conversely, in Java all classes and methods are open for extension by default.
  * In order to extend a class in Kotlin, we have to add the `open` keyword before `class`.
  */
-open class Animal(val mobility: String)
-class Fish : Animal(mobility = "swim")
+open class Animal(val mobility: String) {
+    open val speed: String = ""
+}
+class Fish : Animal(mobility = "swim") {
+    override val speed = "FishDerivedSpeed"
+}
 class Bird : Animal(mobility = "fly")
 class Wolves : Animal(mobility = "run")
 class Snail : Animal(mobility = "slide")
