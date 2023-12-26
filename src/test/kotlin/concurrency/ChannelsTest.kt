@@ -66,4 +66,17 @@ class ChannelsTest {
             delay(700)
         }
     }
+
+    /**
+     * If you remove the for loop, you'll see how the test is hanged.
+     * That is a disadvantage of using Channel. Instead, we should use Flow.
+     */
+    @Test
+    fun `testing produce channel`() = runBlocking {
+        val channelResult = with(channels) { producingElements() }
+        for (element in channelResult) {
+            delay(500)
+            println(element)
+        }
+    }
 }

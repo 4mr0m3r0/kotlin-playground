@@ -1,6 +1,10 @@
 package concurrency
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.channels.ReceiveChannel
+import kotlinx.coroutines.channels.produce
 import kotlinx.coroutines.delay
 
 class Channels {
@@ -47,5 +51,12 @@ class Channels {
             println("Sending genus: $genus")
         }
         _stateBuffered.close() //Close the channel once all element where sent.
+    }
+
+    @OptIn(ExperimentalCoroutinesApi::class)
+    fun CoroutineScope.producingElements(): ReceiveChannel<String> = produce {
+        send("A")
+        send("B")
+        send("C")
     }
 }

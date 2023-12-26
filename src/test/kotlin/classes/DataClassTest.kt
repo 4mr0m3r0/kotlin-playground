@@ -1,6 +1,5 @@
 package classes
 
-import kotlin.math.exp
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
@@ -134,6 +133,35 @@ class DataClassTest {
         assertEquals(
             expected = lenticular.level,
             actual = level
+        )
+    }
+
+    /**
+     * Properties that aren't declared in the primary constructor don't take part
+     * in the equality checks and hash code calculation.
+     */
+    @Test
+    fun `given different values outside constructor, when equals, then objects still are equal`() {
+        val lenticular = DataCloud(
+            level = "Very high-level",
+            physicalForm = "Stratocumuliform",
+            variety = "Lenticular"
+        )
+        lenticular.anotherParamOutsideConstructor = "AnyValue"
+        val lenticularReplica = DataCloud(
+            level = "Very high-level",
+            physicalForm = "Stratocumuliform",
+            variety = "Lenticular"
+        )
+        lenticularReplica.anotherParamOutsideConstructor = "A Different Value"
+
+        println("First Object: $lenticular")
+        println("Second Object: $lenticularReplica")
+        println("First Object hasCode: ${lenticular.hashCode()}")
+        println("Second Object hasCode: ${lenticularReplica.hashCode()}")
+        assertEquals(
+            expected = true,
+            actual = lenticular == lenticularReplica
         )
     }
 }

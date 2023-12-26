@@ -16,6 +16,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |                   | Visibility Modifier  |                 |                             |                     | Reified                      |
 |                   | Type Alias           |                 |                             |                     | Contracts                    |
 |                   | Custom Delegate      |                 |                             |                     | TailRec                      |
+|                   | Class Delegation     |                 |                             |                     |                              |
 
 
 ## Algorithms 
