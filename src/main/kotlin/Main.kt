@@ -1,6 +1,12 @@
 @file:JvmName("MainKotlin")
 
-fun main(args: Array<String>) { }
+fun main(args: Array<String>) {
+    println(Statics.getCounter())
+    val staticA = Statics("A", "B")
+    println(Statics.getCounter())
+    val staticB = Statics("C", "D")
+    println(Statics.getCounter())
+}
 
 fun callingKotlinFromJava() = "Calling Kotlin from Java"
 

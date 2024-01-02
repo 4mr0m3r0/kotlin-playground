@@ -17,6 +17,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |                   | Type Alias           |                 |                             |                     | Contracts                    |
 |                   | Custom Delegate      |                 |                             |                     | TailRec                      |
 |                   | Class Delegation     |                 |                             |                     |                              |
+|                   | Objects in Kotlin    |                 |                             |                     |                              |
 
 
 ## Algorithms 
