@@ -35,9 +35,10 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Design Patterns
 
-| Creational | Structural | Behavioral |
-|------------|------------|------------|
-|            |            | Command    |
+| Creational | Structural | Behavioral              |
+|------------|------------|-------------------------|
+|            |            | Chain of Responsibility |
+|            |            | Command                 |
 
 ## SOLID
 | Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
