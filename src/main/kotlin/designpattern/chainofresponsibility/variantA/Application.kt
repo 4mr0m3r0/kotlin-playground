@@ -1,4 +1,6 @@
-package designpattern.chainofresponsibility
+package designpattern.chainofresponsibility.variantA
+
+import designpattern.chainofresponsibility.Request
 
 class Application : Handler {
     override fun handleRequest(request: Request) {

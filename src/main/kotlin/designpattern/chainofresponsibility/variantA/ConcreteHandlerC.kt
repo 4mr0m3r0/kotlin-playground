@@ -1,4 +1,6 @@
-package designpattern.chainofresponsibility
+package designpattern.chainofresponsibility.variantA
+
+import designpattern.chainofresponsibility.Request
 
 class ConcreteHandlerC(private val successor: Handler) : Handler {
     override fun handleRequest(request: Request) {

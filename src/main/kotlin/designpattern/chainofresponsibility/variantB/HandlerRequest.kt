@@ -1,4 +1,6 @@
-package designpattern.chainofresponsibility
+package designpattern.chainofresponsibility.variantB
+
+import designpattern.chainofresponsibility.Request
 
 /**
  * Another way of implementing the Chain of Responsibility
