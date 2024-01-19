@@ -22,22 +22,22 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Algorithms 
 
-| Arrays                 | Binary Tree           | Strings         |
-|------------------------|-----------------------|-----------------|
-| NonConstructibleChange | FindClosestValueInBST | CountingValleys |
-| SortedSquaredArray     | BranchSums            | RepeatedString  |
-| TournamentWinner       | NodeDepths            |                 |
-| TransposeMatrix        | HeightOfABinaryTree   |                 |
-| TwoNumberSum           |                       |                 |
-| ValidateSubsequence    |                       |                 |
-| JumpingOnTheClouds     |                       |                 |
-| LeftRotation           |                       |                 |
+| Arrays                 | Binary Tree            | Strings         |
+|------------------------|------------------------|-----------------|
+| NonConstructibleChange | FindClosestValueInBST  | CountingValleys |
+| SortedSquaredArray     | BranchSums             | RepeatedString  |
+| TournamentWinner       | NodeDepths             |                 |
+| TransposeMatrix        | HeightOfABinaryTree    |                 |
+| TwoNumberSum           | EvaluateExpressionTree |                 |
+| ValidateSubsequence    |                        |                 |
+| JumpingOnTheClouds     |                        |                 |
+| LeftRotation           |                        |                 |
 
 ## Design Patterns
 
 | Creational | Structural | Behavioral |
 |------------|------------|------------|
-|            |            |            |
+|            |            | Command    |
 
 ## SOLID
 | Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
