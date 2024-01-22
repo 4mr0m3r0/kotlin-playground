@@ -9,7 +9,6 @@ import designpattern.chainofresponsibility.variantB.HandlerRequestPreview
 import designpattern.chainofresponsibility.variantC.Button
 import designpattern.chainofresponsibility.variantC.Dialog
 import designpattern.chainofresponsibility.variantC.Topic
-import designpattern.chainofresponsibility.variantA.Application as ApplicationA
 import designpattern.chainofresponsibility.variantC.Application as ApplicationC
 
 fun main() {
@@ -24,15 +23,17 @@ fun main() {
 }
 
 private fun chainOfResponsibilityVariantA() {
-    val application: Handler = ApplicationA()
-    val handlerA: Handler = ConcreteHandlerA(successor = application)
-    val handlerB: Handler = ConcreteHandlerB(successor = handlerA)
-    val handlerC: Handler = ConcreteHandlerC(successor = handlerB)
+    val handlerA: Handler = ConcreteHandlerA()
+    val handlerB: Handler = ConcreteHandlerB()
+    val handlerC: Handler = ConcreteHandlerC()
+    handlerA.setSuccessor(handlerB)
+    handlerB.setSuccessor(handlerC)
 
-    handlerC.handleRequest(Request.Help)
-    handlerC.handleRequest(Request.Print)
-    handlerC.handleRequest(Request.Preview(param1 = "1", param2 = "2"))
-    handlerC.handleRequest(Request.Random)
+
+    handlerA.handleRequest(Request.Help)
+    handlerA.handleRequest(Request.Print)
+    handlerA.handleRequest(Request.Preview(param1 = "1", param2 = "2"))
+    handlerA.handleRequest(Request.Random)
 }
 
 private fun chainOfResponsibilityVariantB() {
