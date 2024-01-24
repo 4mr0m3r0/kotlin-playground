@@ -18,6 +18,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |                   | Custom Delegate      |                 |                             |                     | TailRec                      |
 |                   | Class Delegation     |                 |                             |                     |                              |
 |                   | Objects in Kotlin    |                 |                             |                     |                              |
+|                   | Class With Statics   |                 |                             |                     |                              |
 
 
 ## Algorithms 
@@ -39,6 +40,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |------------|------------|-------------------------|
 |            |            | Chain of Responsibility |
 |            |            | Command                 |
+|            |            | State                   |
 
 ## SOLID
 | Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
