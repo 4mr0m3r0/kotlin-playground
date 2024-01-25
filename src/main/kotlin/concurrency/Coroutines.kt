@@ -124,6 +124,17 @@ private fun coolroutine() = runBlocking(Dispatchers.IO + CoroutineName("Coolrout
     log(coroutineContext)
 }
 
+private fun coroutineWithException() = runBlocking {
+    launch(Dispatchers.IO) {
+        try {
+            delay(2000)
+            error("Testing Exceptions")
+        } catch (e: Exception) {
+            println("Exception is ${e.message}")
+        }
+    }
+}
+
 fun main() {
-    coolroutine()
+    coroutineWithException()
 }
