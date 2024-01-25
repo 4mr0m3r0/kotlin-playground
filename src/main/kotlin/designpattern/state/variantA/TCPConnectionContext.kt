@@ -1,9 +1,10 @@
 package designpattern.state.variantA
 
 class TCPConnectionContext {
-    private var state: TCPState? = null
+    var state: TCPState? = null
+        private set
     init {
-        state = TCPClosed()
+        state = TCPClosed.getInstance()
     }
     fun changeState(state: TCPState) {
         this.state = state

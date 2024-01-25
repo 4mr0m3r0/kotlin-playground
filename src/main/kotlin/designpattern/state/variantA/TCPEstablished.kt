@@ -8,6 +8,12 @@ class TCPEstablished : TCPState {
 
     override fun close(t: TCPConnectionContext) {
         println("TCPEstablished -> close -> TCPListen")
-        changeState(t, TCPListen())
+        changeState(t, TCPListen.getInstance())
+    }
+
+    companion object {
+        private var instance: TCPState? = null
+
+        fun getInstance(): TCPState = instance ?: TCPEstablished().also { instance = it }
     }
 }
