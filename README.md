@@ -38,8 +38,9 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 | Creational | Structural | Behavioral              |
 |------------|------------|-------------------------|
-|            |            | Chain of Responsibility |
+|            | Facade     | Chain of Responsibility |
 |            |            | Command                 |
+|            |            | Mediator                |
 |            |            | State                   |
 
 ## SOLID
