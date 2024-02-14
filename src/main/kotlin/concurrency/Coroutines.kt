@@ -135,6 +135,19 @@ private fun coroutineWithException() = runBlocking {
     }
 }
 
+fun switchingDispatcherIO() = runBlocking {
+    launch(Dispatchers.Default) {
+        log("Waiting before switching dispatcher")
+        delay(200)
+        withContext(Dispatchers.IO) {
+            log("Waiting inside IO scope")
+            delay(1000)
+            log("Doing some work in IO logic")
+        }
+        log("Final!")
+    }
+}
+
 fun main() {
-    coroutineWithException()
+    switchingDispatcherIO()
 }
