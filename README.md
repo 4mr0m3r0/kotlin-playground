@@ -43,7 +43,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |            |            | Mediator                |
 |            |            | State                   |
 
-The above patterns where implemented following the ideas and explanation of: 
+The above patterns were implemented following the ideas and explanation of: 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](https://a.co/d/hGRF9MP).
 * [Head First Design Patterns: Building Extensible & Maintainable Object-Oriented Software](https://a.co/d/d8qI5Pr).
 * [Agile Software Development: Principles, Patterns, and Practices](https://a.co/d/5kSfeiq).
