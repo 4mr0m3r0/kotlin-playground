@@ -43,11 +43,11 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |            |            | Mediator                |
 |            |            | State                   |
 
-The above patterns were implemented following the ideas and explanation of: 
-* [Design Patterns: Elements of Reusable Object-Oriented Software](https://a.co/d/hGRF9MP).
-* [Head First Design Patterns: Building Extensible & Maintainable Object-Oriented Software](https://a.co/d/d8qI5Pr).
-* [Agile Software Development: Principles, Patterns, and Practices](https://a.co/d/5kSfeiq).
-* [Design Pattern Video Tutorial - Derek Banas](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&ab_channel=DerekBanas)
+The above patterns were implemented following the ideas and explanation of:  
+📖 [Design Patterns: Elements of Reusable Object-Oriented Software](https://a.co/d/hGRF9MP).  
+📖 [Head First Design Patterns: Building Extensible & Maintainable Object-Oriented Software](https://a.co/d/d8qI5Pr).  
+📖 [Agile Software Development: Principles, Patterns, and Practices](https://a.co/d/5kSfeiq).  
+🎥 [Design Pattern Video Tutorial - Derek Banas](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&ab_channel=DerekBanas).  
 
 ## SOLID
 | Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
