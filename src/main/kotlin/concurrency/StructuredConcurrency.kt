@@ -7,6 +7,8 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.ensureActive
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -176,6 +178,22 @@ private fun cooperativeCancellation() = runBlocking {
     }
     delay(600)
     myJob.cancel()
+}
+private fun isActiveCancellation() = runBlocking {
+    val myJob = launch {
+        repeat(5) {
+            doCpuHeavyWork()
+            if (!isActive) return@launch
+        }
+    }
+}
+private fun ensureActiveCancellation() = runBlocking {
+    val myJob = launch {
+        repeat(5) {
+            doCpuHeavyWork()
+            ensureActive()
+        }
+    }
 }
 
 fun main() {
