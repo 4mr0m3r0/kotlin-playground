@@ -15,4 +15,8 @@ class DelegateCollectionBoilerplate<T> : Collection<T> {
     override fun contains(element: T): Boolean = innerList.contains(element)
 }
 
-class DelegateCollection<T>(innerList: Collection<T> = ArrayList()) : Collection<T> by innerList
+class DelegateCollection<T>(private val innerList: Collection<T> = ArrayList()) : Collection<T> by innerList {
+    override fun isEmpty(): Boolean {
+        return innerList.isEmpty()
+    }
+}
