@@ -5,6 +5,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlin.test.Test
+import kotlin.time.Duration.Companion.milliseconds
 
 class SharedFlowsTest {
     private val sharedFlows = SharedFlows()
@@ -108,6 +109,15 @@ class SharedFlowsTest {
                 println(it)
                 delay(700)
             }
+        }
+    }
+
+    @Test
+    fun `subscribing to a shared flow with delay`(): Unit = runBlocking {
+        sharedFlows.beginBroadcasting(this)
+        delay(600.milliseconds)
+        sharedFlows.messageFlow.collect {
+            log("A collecting $it!")
         }
     }
 }

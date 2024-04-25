@@ -1,23 +1,7 @@
 package concurrency
 
-import kotlinx.coroutines.CoroutineName
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.ensureActive
-import kotlinx.coroutines.isActive
-import kotlinx.coroutines.job
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withTimeout
-import kotlinx.coroutines.withTimeoutOrNull
+import kotlinx.coroutines.*
 import kotlin.random.Random
-
-private var zeroTime = System.currentTimeMillis()
-private fun log(message: Any?) = println("${System.currentTimeMillis() - zeroTime} " + "[${Thread.currentThread().name}] $message")
 
 private fun startingANumberOfDifferentCoroutines() = runBlocking {
     launch {

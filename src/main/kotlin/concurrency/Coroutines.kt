@@ -1,19 +1,10 @@
 package concurrency
 
-import kotlinx.coroutines.CoroutineName
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import kotlinx.coroutines.withContext
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
-
-private var zeroTime = System.currentTimeMillis()
-private fun log(message: Any?) = println("${System.currentTimeMillis() - zeroTime} " + "[${Thread.currentThread().name}] $message")
 
 fun callingANewJavaThread() {
     println("I'm on ${Thread.currentThread().name}")

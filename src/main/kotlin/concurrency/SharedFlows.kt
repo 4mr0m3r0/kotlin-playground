@@ -1,9 +1,14 @@
 package concurrency
 
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.launch
+import kotlin.random.Random
+import kotlin.random.nextInt
+import kotlin.time.Duration.Companion.milliseconds
 
 class SharedFlows {
     private val penguinGenus = listOf(
@@ -73,6 +78,20 @@ class SharedFlows {
             delay(100)
             _stateOnBufferOverflow.emit(genus)
             println("Emitting genus: $genus")
+        }
+    }
+
+    private val _messageFlow = MutableSharedFlow<Int>()
+    val messageFlow = _messageFlow.asSharedFlow()
+
+    fun beginBroadcasting(scope: CoroutineScope) {
+        scope.launch {
+            while(true) {
+                delay(500.milliseconds)
+                val number = Random.nextInt(0..10)
+                log("Emitting $number!")
+                _messageFlow.emit(number)
+            }
         }
     }
 }
