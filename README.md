@@ -23,16 +23,16 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Algorithms 
 
-| Arrays                 | Binary Tree            | Strings         |
-|------------------------|------------------------|-----------------|
-| NonConstructibleChange | FindClosestValueInBST  | CountingValleys |
-| SortedSquaredArray     | BranchSums             | RepeatedString  |
-| TournamentWinner       | NodeDepths             |                 |
-| TransposeMatrix        | HeightOfABinaryTree    |                 |
-| TwoNumberSum           | EvaluateExpressionTree |                 |
-| ValidateSubsequence    | PostorderTraversal     |                 |
-| JumpingOnTheClouds     | PreorderTraversal      |                 |
-| LeftRotation           |                        |                 |
+| Arrays                 | Binary Tree            | Graph            | Strings         |
+|------------------------|------------------------|------------------|-----------------|
+| NonConstructibleChange | FindClosestValueInBST  | DepthFirstSearch | CountingValleys |
+| SortedSquaredArray     | BranchSums             |                  | RepeatedString  |
+| TournamentWinner       | NodeDepths             |                  |                 |
+| TransposeMatrix        | HeightOfABinaryTree    |                  |                 |
+| TwoNumberSum           | EvaluateExpressionTree |                  |                 |
+| ValidateSubsequence    | PostorderTraversal     |                  |                 |
+| JumpingOnTheClouds     | PreorderTraversal      |                  |                 |
+| LeftRotation           |                        |                  |                 |
 
 ## Design Patterns
 
