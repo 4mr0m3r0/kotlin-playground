@@ -1,5 +1,6 @@
 package algorithms.trees
 
+//Unfinished
 class LowestCommonAncestor {
 
     fun getLowestCommonAncestor(binaryTree: BinaryTree, nodeValue1: Int, nodeValue2: Int) {

@@ -30,8 +30,8 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 | TournamentWinner       | NodeDepths             |                 |
 | TransposeMatrix        | HeightOfABinaryTree    |                 |
 | TwoNumberSum           | EvaluateExpressionTree |                 |
-| ValidateSubsequence    |                        |                 |
-| JumpingOnTheClouds     |                        |                 |
+| ValidateSubsequence    | PostorderTraversal     |                 |
+| JumpingOnTheClouds     | PreorderTraversal      |                 |
 | LeftRotation           |                        |                 |
 
 ## Design Patterns
