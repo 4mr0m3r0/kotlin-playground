@@ -7,7 +7,7 @@ class DepthFirstSearchTest {
     private val depthFirstSearch = DepthFirstSearch("A")
 
     @Test
-    fun `given graph, when depthFirstSearch, then return list`() {
+    fun `given graph, when depthFirstSearch, then expected list`() {
         depthFirstSearch.children.add(
             DepthFirstSearch("B").also { b ->
                 b.children.add(DepthFirstSearch("E"))
@@ -32,6 +32,39 @@ class DepthFirstSearchTest {
         )
 
         val result = depthFirstSearch.depthFirstSearch()
+
+        assertEquals(
+            expected = listOf("A", "B", "E", "F", "I", "J", "C", "D", "G", "K", "H"),
+            actual = result
+        )
+    }
+
+    @Test
+    fun `given graph, when second variant, then expected list`() {
+        depthFirstSearch.children.add(
+            DepthFirstSearch("B").also { b ->
+                b.children.add(DepthFirstSearch("E"))
+                b.children.add(
+                    DepthFirstSearch("F").also { f ->
+                        f.children.add(DepthFirstSearch("I"))
+                        f.children.add(DepthFirstSearch("J"))
+                    }
+                )
+            }
+        )
+        depthFirstSearch.children.add(DepthFirstSearch("C"))
+        depthFirstSearch.children.add(
+            DepthFirstSearch("D").also { d ->
+                d.children.add(
+                    DepthFirstSearch("G").also { g ->
+                        g.children.add(DepthFirstSearch("K"))
+                    }
+                )
+                d.children.add(DepthFirstSearch("H"))
+            }
+        )
+
+        val result = depthFirstSearch.depthFirstSearch2ndVariant(arrayListOf())
 
         assertEquals(
             expected = listOf("A", "B", "E", "F", "I", "J", "C", "D", "G", "K", "H"),

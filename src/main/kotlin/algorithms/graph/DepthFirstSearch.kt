@@ -1,12 +1,15 @@
 package algorithms.graph
 
 /**
- * From AlgoExpert
+ * AlgoExpert
  */
 class DepthFirstSearch(name: String) {
     val name: String = name
     val children = mutableListOf<DepthFirstSearch>()
 
+    /**
+     * Time O(v + e) | Space O(v)
+     */
     fun depthFirstSearch(): List<String> {
         val nodeNames = arrayListOf<String>()
         traverse(this, nodeNames)
@@ -18,5 +21,16 @@ class DepthFirstSearch(name: String) {
         node.children.forEach { child ->
             traverse(child, nodeNames)
         }
+    }
+
+    /**
+     * Time O(v + e) | Space O(v)
+     */
+    fun depthFirstSearch2ndVariant(nodeNames: ArrayList<String>): List<String> {
+        nodeNames.add(this.name)
+        this.children.forEach { child ->
+            child.depthFirstSearch2ndVariant(nodeNames)
+        }
+        return nodeNames
     }
 }
