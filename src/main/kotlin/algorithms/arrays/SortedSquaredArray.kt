@@ -1,5 +1,8 @@
 package algorithms.arrays
 
+/**
+ * AlgoExpert
+ */
 class SortedSquaredArray {
 
     /**

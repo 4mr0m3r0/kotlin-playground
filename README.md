@@ -21,18 +21,23 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |                   | Class With Statics   |                 |                             |                     |                              |
 
 
-## Algorithms 
+## Algorithms
 
-| Arrays                 | Binary Tree            | Graph            | Strings         |
-|------------------------|------------------------|------------------|-----------------|
-| NonConstructibleChange | FindClosestValueInBST  | DepthFirstSearch | CountingValleys |
-| SortedSquaredArray     | BranchSums             |                  | RepeatedString  |
-| TournamentWinner       | NodeDepths             |                  |                 |
-| TransposeMatrix        | HeightOfABinaryTree    |                  |                 |
-| TwoNumberSum           | EvaluateExpressionTree |                  |                 |
-| ValidateSubsequence    | PostorderTraversal     |                  |                 |
-| JumpingOnTheClouds     | PreorderTraversal      |                  |                 |
-| LeftRotation           |                        |                  |                 |
+The references and tools for implementing the algorithms listed in the following table were:  
+🌐 [AlgoExpert](https://www.algoexpert.io/).  
+🌐 [HackerRank](https://www.hackerrank.com/).  
+📖 [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X/ref=sr_1_1?crid=SZPSDTGJQDJ5&dib=eyJ2IjoiMSJ9.dDPqDZSqkDgdnEPWAEei-Gq3gCVIjXxt9eyJ9zX_ywGfGUjmFo0ywqYPxZiXE8Wc_rhBQoYPK9-PPoPS6F1uBLc4m9T8jKPcKUhwOxBr3kVoZXDiU3CFyrBMvbWuRSSpSOwkTKwy93xpIx5UKKw69-6UZefxGS9_3arxJTMBEUTSAi-n1r-zVwujjcxTXGmZbcQB6TA1PuXJOTId5t9MBq52S86BpZRnWbrNVDyM1Kc.DORtGIAU50e7jLTvCQDO6ilMgb9gchQ5p0w5CFbVjL8&dib_tag=se&keywords=introduction+to+algorithms&qid=1727125357&s=books&sprefix=Introduction+to+Alg%2Cstripbooks-intl-ship%2C226&sr=1-1).
+
+| Arrays                   | Binary Tree               | Graph              | Strings          | Greedy               | Ordering       |
+|--------------------------|---------------------------|--------------------|------------------|----------------------|----------------|
+| Non Constructible Change | Find Closest Value In BST | Depth First Search | Counting Valleys | Minimum Waiting Time | Insertion Sort |
+| Sorted Squared Array     | Branch Sums               |                    | Repeated String  |                      |                |
+| Tournament Winner        | Node Depths               |                    |                  |                      |                |
+| Transpose Matrix         | Height Of A Binary Tree   |                    |                  |                      |                |
+| Two Number Sum           | Evaluate Expression Tree  |                    |                  |                      |                |
+| Validate Subsequence     | Postorder Traversal       |                    |                  |                      |                |
+| Jumping On The Clouds    | Preorder Traversal        |                    |                  |                      |                |
+| Left Rotation            |                           |                    |                  |                      |                |
 
 ## Design Patterns
 

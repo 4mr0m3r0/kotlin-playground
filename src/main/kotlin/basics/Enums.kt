@@ -25,3 +25,16 @@ enum class PantheraSubspecies(vararg val subspecies: String) {
     ),
     JAGUAR("Monotypic")
 }
+
+enum class Color(val r: Int, val g: Int, val b: Int) {
+    RED(255, 0, 0),
+    ORANGE(255, 165, 0),
+    YELLOW(255, 255, 0);
+    val rgb = (r * 256 + g) * 256 + b
+    fun printColor() = println("$this is $rgb")
+}
+
+fun main() {
+    println(Color.YELLOW.rgb)
+    println(Color.ORANGE.printColor())
+}

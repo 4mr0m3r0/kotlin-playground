@@ -1,5 +1,8 @@
 package algorithms.strings
 
+/**
+ * HackerRank
+ */
 class CountingValleys {
     /**
      * Big O Notation. Time O(n) | Space O(1).

@@ -33,5 +33,15 @@ class LoopsAndRanges {
         for (i in anyList.indices) {
             val element = anyList[i]
         }
+
+        // Starting from a given index until end
+        for (i in 2 until anyList.size) {
+            println("Element > ${anyList[i]}")
+        }
+
+        // Repeat
+        repeat(anyList.size) { i ->
+            println("Position $i")
+        }
     }
 }
