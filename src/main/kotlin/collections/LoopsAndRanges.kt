@@ -44,4 +44,22 @@ class LoopsAndRanges {
             println("Position $i")
         }
     }
+
+    /**
+     * Loops with labels
+     */
+    fun nestedLoopsWithLabel() {
+        var outerCondition = 0
+        outer@ while (outerCondition < 15) {
+            var innerCondition = 0
+            while (innerCondition < 13) {
+                if (innerCondition == 5) break
+                if (innerCondition == 3) continue
+                if (innerCondition > 10) break@outer
+                if (innerCondition == 10) continue@outer
+                innerCondition++
+            }
+            outerCondition++
+        }
+    }
 }
