@@ -86,11 +86,13 @@ class SharedFlows {
 
     fun beginBroadcasting(scope: CoroutineScope) {
         scope.launch {
-            while(true) {
+            var i = 0
+            while(i < 20) {
                 delay(500.milliseconds)
                 val number = Random.nextInt(0..10)
                 log("Emitting $number!")
                 _messageFlow.emit(number)
+                i++
             }
         }
     }

@@ -26,7 +26,7 @@ class LoopsAndRanges {
     }
 
     /**
-     * Loops
+     * For Loop
      */
     fun loops(anyList: List<String>) {
         // traverse `for` loop through indices
@@ -39,6 +39,16 @@ class LoopsAndRanges {
             println("Element > ${anyList[i]}")
         }
 
+        // index and value
+        for ((index, element) in anyList.withIndex()) {
+            println("$index: $element")
+        }
+    }
+
+    /**
+     * Repeat loop
+     */
+    fun repeatLoop(anyList: List<String>) {
         // Repeat
         repeat(anyList.size) { i ->
             println("Position $i")
