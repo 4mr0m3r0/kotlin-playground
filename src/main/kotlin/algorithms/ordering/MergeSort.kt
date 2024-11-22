@@ -4,7 +4,7 @@ package algorithms.ordering
  * Introduction to Algorithms
  */
 class MergeSort {
-    // Study variant 1
+
     fun merge(array: Array<Int>, startPos: Int, middlePos: Int, endPos: Int): Array<Int> {
         val nl = middlePos - startPos + 1
         val nr = endPos - middlePos
@@ -40,5 +40,13 @@ class MergeSort {
             k++
         }
         return array
+    }
+
+    fun mergeSort(array: Array<Int>, startPos: Int, endPos: Int): Array<Int> {
+        if (startPos >= endPos) return array
+        val middlePos = (startPos + endPos) / 2
+        mergeSort(array = array, startPos = startPos, endPos = middlePos)
+        mergeSort(array = array, startPos = middlePos + 1, endPos = endPos)
+        return merge(array, startPos, middlePos, endPos)
     }
 }

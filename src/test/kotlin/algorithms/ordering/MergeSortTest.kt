@@ -23,4 +23,20 @@ class MergeSortTest {
         )
     }
 
+    @Test
+    fun `given array, when mergeSort, then order`() {
+        val array = arrayOf(12, 3, 7, 9, 14, 6, 11, 2, 4)
+
+        val result = mergeSort.mergeSort(
+            array = array,
+            startPos = 0,
+            endPos = 8
+        )
+
+        assertContentEquals(
+            expected = arrayOf(2, 3, 4, 6, 7, 9, 11, 12, 14),
+            actual = result
+        )
+    }
+
 }
