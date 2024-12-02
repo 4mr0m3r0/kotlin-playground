@@ -21,3 +21,25 @@ val CloudWithPropertyExtension.Companion.clouds get() = listOf(
 fun usingCloudWithPropertyExtension() {
     CloudWithPropertyExtension.clouds
 }
+
+/**
+ * String Extension properties
+ */
+val String.lastChar: Char
+    get() = this.get(length - 1)
+
+/**
+ * Extension var p. 75
+ */
+var StringBuilder.lastChar: Char
+    get() = this.get(length - 1)
+    set(value) {
+        this.setCharAt(length - 1, value)
+    }
+
+fun main() {
+    val sb = StringBuilder("Kotlin?")
+    println(sb.lastChar)
+    sb.lastChar = '!'
+    println(sb)
+}
