@@ -31,7 +31,7 @@ The references and tools for implementing the algorithms listed in the following
 | Arrays                   | Binary Tree               | Graph              | Strings          | Greedy               | Ordering       |
 |--------------------------|---------------------------|--------------------|------------------|----------------------|----------------|
 | Non Constructible Change | Find Closest Value In BST | Depth First Search | Counting Valleys | Minimum Waiting Time | Insertion Sort |
-| Sorted Squared Array     | Branch Sums               |                    | Repeated String  |                      | Merge Sort     |
+| Sorted Squared Array     | Branch Sums               |                    | Repeated String  | Class Photos         | Merge Sort     |
 | Tournament Winner        | Node Depths               |                    |                  |                      |                |
 | Transpose Matrix         | Height Of A Binary Tree   |                    |                  |                      |                |
 | Two Number Sum           | Evaluate Expression Tree  |                    |                  |                      |                |

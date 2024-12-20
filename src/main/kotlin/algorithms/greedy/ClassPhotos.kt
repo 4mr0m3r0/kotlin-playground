@@ -4,11 +4,12 @@ package algorithms.greedy
  * AlgoExpert
  */
 class ClassPhotos {
+    /**
+     * Time O(n log n) | O(1)
+     */
     fun verification(redShirtHeights: List<Int>, blueShirtHeights: List<Int>): Boolean {
-        // TODO order both arrays.
         val redOrder = redShirtHeights.sorted()
         val blueOrder = blueShirtHeights.sorted()
-        // TODO compare red array with blue array and if all elements are lower or greater, then the class photo can be taken.
         var differences = 0
         var takePhoto = false
         for ((i, redValue) in redOrder.withIndex()) {
@@ -19,12 +20,27 @@ class ClassPhotos {
             }
             if (redValue > blueOrder[i] && differences == 1) takePhoto = true
             else if (redValue < blueOrder[i] && differences == -1) takePhoto = true
-            else {
-                takePhoto = false
-                break
+            else return false
+        }
+        return takePhoto
+    }
+
+    /**
+     * Time O(n log n) | O(1)
+     */
+    fun verificationVariantB(redShirtHeights: List<Int>, blueShirtHeights: List<Int>): Boolean {
+        val redOrder = redShirtHeights.sortedDescending()
+        val blueOrder = blueShirtHeights.sortedDescending()
+        val shirtColorInFirstRow = if (redOrder.first() < blueOrder.first()) "RED" else "BLUE"
+        repeat(redOrder.size) { i ->
+            val redShirtHeight = redShirtHeights[i]
+            val blueShirtHeight = blueShirtHeights[i]
+            if (shirtColorInFirstRow == "RED") {
+                if (redShirtHeight >= blueShirtHeight) return false
+            } else {
+                if (blueShirtHeight >= redShirtHeight) return false
             }
         }
-        // TODO return true | false depending on the result.
-        return takePhoto
+        return true
     }
 }
