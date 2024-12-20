@@ -6,6 +6,7 @@ package algorithms.greedy
 class ClassPhotos {
     /**
      * Time O(n log n) | O(1)
+     * It is O(n log n) because of the sorting algorithms.
      */
     fun verification(redShirtHeights: List<Int>, blueShirtHeights: List<Int>): Boolean {
         val redOrder = redShirtHeights.sorted()
@@ -14,12 +15,18 @@ class ClassPhotos {
         var takePhoto = false
         for ((i, redValue) in redOrder.withIndex()) {
             if (i == 0) {
-                if (redValue > blueOrder[i]) differences = 1
-                else if (redValue < blueOrder[i]) differences = -1
+                if (redValue > blueOrder[i]) {
+                    differences = 1
+                    takePhoto = true
+                }
+                else if (redValue < blueOrder[i]) {
+                    differences = -1
+                    takePhoto = true
+                }
                 continue
             }
-            if (redValue > blueOrder[i] && differences == 1) takePhoto = true
-            else if (redValue < blueOrder[i] && differences == -1) takePhoto = true
+            takePhoto = if (redValue > blueOrder[i] && differences == 1) true
+            else if (redValue < blueOrder[i] && differences == -1) true
             else return false
         }
         return takePhoto

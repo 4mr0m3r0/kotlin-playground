@@ -58,4 +58,17 @@ class ClassPhotosTest {
 
         assertFalse(result)
     }
+
+    @Test
+    fun `given one element, when verification photo, then true`() {
+        val red = listOf(126)
+        val blue = listOf(125)
+
+        val result = classPhotos.verification(
+            redShirtHeights = red,
+            blueShirtHeights = blue
+        )
+
+        assertTrue(result)
+    }
 }
