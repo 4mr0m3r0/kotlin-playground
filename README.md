@@ -23,11 +23,6 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 
 ## Algorithms
 
-The references and tools for implementing the algorithms listed in the following table were:  
-🌐 [AlgoExpert](https://www.algoexpert.io/).  
-🌐 [HackerRank](https://www.hackerrank.com/).  
-📖 [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X/ref=sr_1_1?crid=SZPSDTGJQDJ5&dib=eyJ2IjoiMSJ9.dDPqDZSqkDgdnEPWAEei-Gq3gCVIjXxt9eyJ9zX_ywGfGUjmFo0ywqYPxZiXE8Wc_rhBQoYPK9-PPoPS6F1uBLc4m9T8jKPcKUhwOxBr3kVoZXDiU3CFyrBMvbWuRSSpSOwkTKwy93xpIx5UKKw69-6UZefxGS9_3arxJTMBEUTSAi-n1r-zVwujjcxTXGmZbcQB6TA1PuXJOTId5t9MBq52S86BpZRnWbrNVDyM1Kc.DORtGIAU50e7jLTvCQDO6ilMgb9gchQ5p0w5CFbVjL8&dib_tag=se&keywords=introduction+to+algorithms&qid=1727125357&s=books&sprefix=Introduction+to+Alg%2Cstripbooks-intl-ship%2C226&sr=1-1).
-
 | Arrays                   | Binary Tree               | Graph              | Strings          | Greedy               | Ordering       |
 |--------------------------|---------------------------|--------------------|------------------|----------------------|----------------|
 | Non Constructible Change | Find Closest Value In BST | Depth First Search | Counting Valleys | Minimum Waiting Time | Insertion Sort |
@@ -39,6 +34,11 @@ The references and tools for implementing the algorithms listed in the following
 | Jumping On The Clouds    | Preorder Traversal        |                    |                  |                      |                |
 | Left Rotation            |                           |                    |                  |                      |                |
 
+### Resources 
+* 🌐 [AlgoExpert](https://www.algoexpert.io/).  
+* 🌐 [HackerRank](https://www.hackerrank.com/).  
+* 📖 [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X/ref=sr_1_1?crid=SZPSDTGJQDJ5&dib=eyJ2IjoiMSJ9.dDPqDZSqkDgdnEPWAEei-Gq3gCVIjXxt9eyJ9zX_ywGfGUjmFo0ywqYPxZiXE8Wc_rhBQoYPK9-PPoPS6F1uBLc4m9T8jKPcKUhwOxBr3kVoZXDiU3CFyrBMvbWuRSSpSOwkTKwy93xpIx5UKKw69-6UZefxGS9_3arxJTMBEUTSAi-n1r-zVwujjcxTXGmZbcQB6TA1PuXJOTId5t9MBq52S86BpZRnWbrNVDyM1Kc.DORtGIAU50e7jLTvCQDO6ilMgb9gchQ5p0w5CFbVjL8&dib_tag=se&keywords=introduction+to+algorithms&qid=1727125357&s=books&sprefix=Introduction+to+Alg%2Cstripbooks-intl-ship%2C226&sr=1-1).
+
 ## Design Patterns
 
 | Creational | Structural | Behavioral              |
@@ -48,11 +48,11 @@ The references and tools for implementing the algorithms listed in the following
 |            |            | Mediator                |
 |            |            | State                   |
 
-The above patterns were implemented following the ideas and explanation of:  
-📖 [Design Patterns: Elements of Reusable Object-Oriented Software](https://a.co/d/hGRF9MP).  
-📖 [Head First Design Patterns: Building Extensible & Maintainable Object-Oriented Software](https://a.co/d/d8qI5Pr).  
-📖 [Agile Software Development: Principles, Patterns, and Practices](https://a.co/d/5kSfeiq).  
-🎥 [Design Pattern Video Tutorial - Derek Banas](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&ab_channel=DerekBanas).  
+### Resources 
+* 📖 [Design Patterns: Elements of Reusable Object-Oriented Software](https://a.co/d/hGRF9MP).  
+* 📖 [Head First Design Patterns: Building Extensible & Maintainable Object-Oriented Software](https://a.co/d/d8qI5Pr).  
+* 📖 [Agile Software Development: Principles, Patterns, and Practices](https://a.co/d/5kSfeiq).  
+* 🎥 [Design Pattern Video Tutorial - Derek Banas](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&ab_channel=DerekBanas).  
 
 ## SOLID
 | Single Responsibility | Open Closed          | Liskov's Substitution | Interface Segregation | Dependency Inversion |
