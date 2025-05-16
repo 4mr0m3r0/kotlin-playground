@@ -27,7 +27,7 @@ Kotlin Exercises, Data Structure, Algorithms, Design Patterns.
 |--------------------------|---------------------------|--------------------|------------------|----------------------|----------------|
 | Non Constructible Change | Find Closest Value In BST | Depth First Search | Counting Valleys | Minimum Waiting Time | Insertion Sort |
 | Sorted Squared Array     | Branch Sums               |                    | Repeated String  | Class Photos         | Merge Sort     |
-| Tournament Winner        | Node Depths               |                    |                  |                      |                |
+| Tournament Winner        | Node Depths               |                    |                  | TandemBicycle        |                |
 | Transpose Matrix         | Height Of A Binary Tree   |                    |                  |                      |                |
 | Two Number Sum           | Evaluate Expression Tree  |                    |                  |                      |                |
 | Validate Subsequence     | Postorder Traversal       |                    |                  |                      |                |
